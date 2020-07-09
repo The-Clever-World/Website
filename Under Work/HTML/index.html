@@ -1,282 +1,715 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!doctype html>
+<html class="no-js" lang="zxx">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-    <!-- Fontawesome link -->
-    <script src="https://kit.fontawesome.com/49a2e7db07.js" crossorigin="anonymous"></script>
-    <!-- Stylesheet link -->
-    <link rel="stylesheet" href="Style.css">
-
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>THE CLEVER WORLD</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- <link rel="stylesheet" href="css/gijgo.css"> -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/49a2e7db07.js" crossorigin="anonymous"></script>
 </head>
 
-<!-- <style>
-    @import url('https://fonts.googleapis.com/css?family=Roboto');
-
-    body {
-        font-family: 'Roboto', sans-serif;
-    }
-
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    i {
-        margin-right: 10px;
-    }
-
-    /*----------multi-level-accordian-menu------------*/
-    .navbar-logo {
-        padding: 15px;
-        color: #fff;
-    }
-
-    .navbar-mainbg {
-        background-color:black;
-        padding: 0px;
-    }
-
-    #navbarSupportedContent {
-        overflow: hidden;
-        position: relative;
-    }
-
-    #navbarSupportedContent ul {
-        padding: 0px;
-        margin: 0px;
-    }
-
-    #navbarSupportedContent ul li a i {
-        margin-right: 10px;
-    }
-
-    #navbarSupportedContent li {
-        list-style-type: none;
-        float: left;
-    }
-
-    #navbarSupportedContent ul li a {
-        color: rgba(255, 255, 255, 0.5);
-        text-decoration: none;
-        font-size: 15px;
-        display: block;
-        padding: 20px 20px;
-        transition-duration: 0.6s;
-        transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        position: relative;
-    }
-
-    #navbarSupportedContent>ul>li.active>a {
-        color: #6975c5;
-        background-color: transparent;
-        transition: all 0.7s;
-    }
-
-    #navbarSupportedContent a:not(:only-child):after {
-        content: "\f105";
-        position: absolute;
-        right: 20px;
-        top: 10px;
-        font-size: 14px;
-        font-family: "Font Awesome 5 Free";
-        display: inline-block;
-        padding-right: 3px;
-        vertical-align: middle;
-        font-weight: 900;
-        transition: 0.5s;
-    }
-
-    #navbarSupportedContent .active>a:not(:only-child):after {
-        transform: rotate(90deg);
-    }
-
-    .hori-selector {
-        display: inline-block;
-        position: absolute;
-        height: 100%;
-        top: 0px;
-        left: 0px;
-        transition-duration: 0.6s;
-        transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        background-color: #fff;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-        margin-top: 10px;
-    }
-
-    .hori-selector .right,
-    .hori-selector .left {
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        background-color: #fff;
-        bottom: 10px;
-    }
-
-    .hori-selector .right {
-        right: -25px;
-    }
-
-    .hori-selector .left {
-        left: -25px;
-    }
-
-    .hori-selector .right:before,
-    .hori-selector .left:before {
-        content: '';
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: black;
-    }
-
-    .hori-selector .right:before {
-        bottom: 0;
-        right: -25px;
-    }
-
-    .hori-selector .left:before {
-        bottom: 0;
-        left: -25px;
-    }
-
-
-
-
-    @media (max-width: 991px) {
-        #navbarSupportedContent ul li a {
-            padding: 12px 30px;
-        }
-
-        .hori-selector {
-            margin-top: 0px;
-            margin-left: 10px;
-            border-radius: 0;
-            border-top-left-radius: 25px;
-            border-bottom-left-radius: 25px;
-        }
-
-        .hori-selector .left,
-        .hori-selector .right {
-            right: 10px;
-        }
-
-        .hori-selector .left {
-            top: -25px;
-            left: auto;
-        }
-
-        .hori-selector .right {
-            bottom: -25px;
-        }
-
-        .hori-selector .left:before {
-            left: -25px;
-            top: -25px;
-        }
-
-        .hori-selector .right:before {
-            bottom: -25px;
-            left: -25px;
-        }
-    }
-</style> -->
-
+  
 <body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
 
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-mainbg">
-        <a class="navbar-brand navbar-logo" href="#">CLEVER WORLD</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars text-white"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <div class="hori-selector">
-                    <div class="left"></div>
-                    <div class="right"></div>
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid p-0">
+                    <div class="row align-items-center no-gutters">
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo-img">
+                                <a href="index.html">
+                                    <img src="img/logo.png " alt="#" style="width: 300px; height: 40px;">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7">
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a class="active" href="#">home</a></li>
+                                        <li><a href="#">welcome</a></li>
+                                        <li><a href="#">about</a></li>
+                                        <li><a href="#">blog </a></li>
+                                        <li><a href="#">Connect</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
                 </div>
-                <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0);"><i class="fas fa-home"></i>Home</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="javascript:void(0);" href="#"><i class="fab fa-blogger-b"></i>Blogs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i>About us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-calendar-alt"></i>Vision</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-chart-bar"></i>Connect</a>
-                </li>
-            </ul>
+            </div>
         </div>
-    </nav>
+    </header>
+    <!-- header-end -->
 
-    <script src="/function.js">
-        // function test() {
-        //     var tabsNewAnim = $('#navbarSupportedContent');
-        //     var selectorNewAnim = $('#navbarSupportedContent').find('li').length;
-        //     var activeItemNewAnim = tabsNewAnim.find('.active');
-        //     var activeWidthNewAnimHeight = activeItemNewAnim.innerHeight();
-        //     var activeWidthNewAnimWidth = activeItemNewAnim.innerWidth();
-        //     var itemPosNewAnimTop = activeItemNewAnim.position();
-        //     var itemPosNewAnimLeft = activeItemNewAnim.position();
-        //     $(".hori-selector").css({
-        //         "top": itemPosNewAnimTop.top + "px",
-        //         "left": itemPosNewAnimLeft.left + "px",
-        //         "height": activeWidthNewAnimHeight + "px",
-        //         "width": activeWidthNewAnimWidth + "px"
-        //     });
-        //     $("#navbarSupportedContent").on("click", "li", function (e) {
-        //         $('#navbarSupportedContent ul li').removeClass("active");
-        //         $(this).addClass('active');
-        //         var activeWidthNewAnimHeight = $(this).innerHeight();
-        //         var activeWidthNewAnimWidth = $(this).innerWidth();
-        //         var itemPosNewAnimTop = $(this).position();
-        //         var itemPosNewAnimLeft = $(this).position();
-        //         $(".hori-selector").css({
-        //             "top": itemPosNewAnimTop.top + "px",
-        //             "left": itemPosNewAnimLeft.left + "px",
-        //             "height": activeWidthNewAnimHeight + "px",
-        //             "width": activeWidthNewAnimWidth + "px"
-        //         });
-        //     });
-        // }
-        // $(document).ready(function () {
-        //     setTimeout(function () { test(); });
-        // });
-        // $(window).on('resize', function () {
-        //     setTimeout(function () { test(); }, 500);
-        // });
-        // $(".navbar-toggler").click(function () {
-        //     setTimeout(function () { test(); });
-        // });
+    <!-- slider_area_start -->
+    <div class="slider_area ">
+        <div class="single_slider d-flex align-items-center justify-content-center slider_bg_1">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-xl-6 col-md-6">
+                        <div class="illastrator_png">
+                            <img src="img/banner/edu_ilastration.png" alt="image not loading">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="slider_info">
+                            <h3>Amazing Blogs <br>
+                                Technical know-how's <br>
+                                All from your fingertips</h3>
+                            <a href="#" class="boxed_btn">Checkout our Blogs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider_area_end -->
 
-    </script>
+    <!-- about_area_start -->
+    <div class="about_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-lg-6">
+                    <div class="single_about_info">
+                        <h2>Welcome to </h2><br>
+                        <h1>THE CLEVER WORLD</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio quam voluptate aut rem
+                            tenetur, dolorem praesentium temporibus minima eaque rerum exercitationem voluptates sunt
+                            reiciendis odit, porro assumenda, impedit illum ut debitis ad consequatur mollitia. Minus
+                            aspernatur quidem magni unde dignissimos.</p>
+                        <a href="#" class="boxed_btn">Checkout our Tutorials</a>
+                    </div>
+                </div>
+                <div class="col-xl-6 offset-xl-1 col-lg-6">
+                    <div class="about_tutorials">
+                        <div class="courses">
+                            <div class="inner_courses">
+                                <div class="text_info">
+                                    <span>5+</span>
+                                    <p>TECH BLOGS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="courses-blue">
+                            <div class="inner_courses">
+                                <div class="text_info">
+                                    <span>3+</span>
+                                    <p>SPORTS BLOGS</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="courses-sky">
+                            <div class="inner_courses">
+                                <div class="text_info">
+                                    <span>2+</span>
+                                    <p> ENTERTAINMENT BLOGS</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about_area_end -->
+
+    <!-- popular_courses_start -->
+    <div class="popular_courses plus_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-100">
+                        <h3>Popular Blogs</h3>
+                        <hr class="light">
+                        <p>Some of our best blogs that are constructed using curated materials. <br> Get an EDGE and stand out from the REST</p>
+                    </div>
+                </div>
+            </div>
+           
+
+        </div>
+        <div class="all_courses">
+            <div class="container">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-6">
+                                <div class="single_courses">
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img src="img/courses/1.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="courses_info">
+                                        <span>Photoshop</span>
+                                        <h3><a href="#">Mobile App design step by step <br>
+                                                from beginner</a></h3>
+                                        <div class="star_prise d-flex justify-content-between">
+                                            <div class="star">
+                                                <i class="flaticon-mark-as-favorite-star"></i>
+                                                <span>(4.5)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6">
+                                <div class="single_courses">
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img src="img/courses/2.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="courses_info">
+                                        <span>Adobe XD</span>
+                                        <h3><a href="#">UI/UX design with Adobe XD with Anderson</a></h3>
+                                        <div class="star_prise d-flex justify-content-between">
+                                            <div class="star">
+                                                <i class="flaticon-mark-as-favorite-star"></i>
+                                                <span>(4.5)</span>
+                                            </div>
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6">
+                                <div class="single_courses">
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img src="img/courses/3.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="courses_info">
+                                        <span>Wordpress</span>
+                                        <h3><a href="#">Wordpress theme development <br>
+                                                from scratch</a></h3>
+                                        <div class="star_prise d-flex justify-content-between">
+                                            <div class="star">
+                                                <i class="flaticon-mark-as-favorite-star"></i>
+                                                <span>(4.5)</span>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6">
+                                <div class="single_courses">
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img src="img/courses/4.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="courses_info">
+                                        <span>Photoshop</span>
+                                        <h3><a href="#">Mobile App design step by step <br>
+                                                from beginner</a></h3>
+                                        <div class="star_prise d-flex justify-content-between">
+                                            <div class="star">
+                                                <i class="flaticon-mark-as-favorite-star"></i>
+                                                <span>(4.5)</span>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6">
+                                <div class="single_courses">
+                                    <div class="thumb">
+                                        <img src="img/courses/5.png" alt="">
+                                    </div>
+                                    <div class="courses_info">
+                                        <span>UI/UX</span>
+                                        <h3><a href="#">How to complete user research <br>
+                                                and make work flow</a></h3>
+                                        <div class="star_prise d-flex justify-content-between">
+                                            <div class="star">
+                                                <i class="flaticon-mark-as-favorite-star"></i>
+                                                <span>(4.5)</span>
+                                            </div>
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6">
+                                <div class="single_courses">
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img src="img/courses/6.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="courses_info">
+                                        <span>Wordpress</span>
+                                        <h3><a href="#">Commitment to dedicated <br>
+                                                Support</a></h3>
+                                        <div class="star_prise d-flex justify-content-between">
+                                            <div class="star">
+                                                <i class="flaticon-mark-as-favorite-star"></i>
+                                                <span>(4.5)</span>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="more_courses text-center">
+                                    <a href="#" class="boxed_btn_rev">More Blogs</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- popular_courses_end-->
+
+
+    <!-- testimonial_area_start -->
+
+    <div class="testimonial_area testimonial_bg_1 overlay">
+        <div class="testmonial_active owl-carousel">
+            <div class="single_testmoial">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="testmonial_text text-center">
+                                <div class="author_img">
+                                    <img src="img/testmonial/author_img.png" alt="">
+                                </div>
+                                <p>
+                                    "Working in conjunction with humanitarian aid <br> agencies we have supported
+                                    programmes to <br>
+                                    alleviate.
+                                    human suffering.
+
+                                </p>
+                                <span>- Jquileen</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single_testmoial">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="testmonial_text text-center">
+                                <div class="author_img">
+                                    <img src="img/testmonial/author_img.png" alt="">
+                                </div>
+                                <p>
+                                    "Working in conjunction with humanitarian aid <br> agencies we have supported
+                                    programmes to <br>
+                                    alleviate.
+                                    human suffering.
+
+                                </p>
+                                <span>- Jquileen</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- testimonial_area_end -->
+
+    <!-- <div class="popular_courses"> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-100">
+                        <h3>MEET THE TEAM!</h3>
+                        <hr>
+                        <p>The ones who are behind this venture</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    <!-- </div> -->
+    <!-- our_team_member_start -->
+    <div class="our_team_member">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="single_team">
+                        <div class="thumb">
+                            <img src="img/team/1.png" alt="">
+                            <div class="social_link">
+                                <a href="#"><i class="fa fa-envelope"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="master_name text-center">
+                            <h3>Macau Wilium</h3>
+                            <p>Massage Master</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="single_team">
+                        <div class="thumb">
+                            <img src="img/team/2.png" alt="">
+                            <div class="social_link">
+                                <a href="#"><i class="fa fa-envelope"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="master_name text-center">
+                            <h3>Dan Jacky</h3>
+                            <p>Mens Cut</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="single_team">
+                        <div class="thumb">
+                            <img src="img/team/3.png" alt="">
+                            <div class="social_link">
+                                <a href="#"><i class="fa fa-envelope"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="master_name text-center">
+                            <h3>Luka Luka</h3>
+                            <p>Mens Cut</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="single_team">
+                        <div class="thumb">
+                            <img src="img/team/4.png" alt="">
+                            <div class="social_link">
+                                <a href="#"><i class="fa fa-envelope"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="master_name text-center">
+                            <h3>Rona Dana</h3>
+                            <p>Ladies Cut</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- our_team_member_end -->
+
+
+    <!-- our_courses_start -->
+    <div class="our_courses">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-100">
+                        <h3>Our Blogs/Tutorials Speciality</h3>
+                        <p>YOU should choose our blogs and tutorials <br>
+                           BECAUSE
+                        </p>
+                        <hr class="light">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-md-6 col-lg-6">
+                    <div class="single_course text-center">
+                        <div class="icon">
+                            <i class="flaticon-art-and-design"></i>
+                        </div>
+                        <h3>Premium Quality</h3>
+                        <p>
+                            All our blogs are written with great research behind them <br>  <br>
+                            They will certainly help you achieve more
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-6">
+                    <div class="single_course text-center">
+                        <div class="icon blue">
+                            <i class="flaticon-business-and-finance"></i>
+                        </div>
+                        <h3>Curated Content</h3>
+                        <p>
+                            Our contents are always on the new trends 
+                            <br> SO <br>
+                            You will always remain updated and will be the "Cool Guy!" 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-6">
+                    <div class="single_course text-center">
+                        <div class="icon">
+                            <i class="flaticon-premium"></i>
+                        </div>
+                        <h3>Easy Read</h3>
+                        <p>
+                           Our articles are written in lucid and engaging language.  <br> So <br>
+                            You will enjoy the learning process, while honing your skills at the same time!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-6">
+                    <div class="single_course text-center">
+                        <div class="icon gradient">
+                            <i class="flaticon-crown"></i>
+                        </div>
+                        <h3>Structured Layouts</h3>
+                        <p>
+                            With our tutorials, you will not feel lost <br> BECAUSE <br>
+                            Our tutorials are well structured to set you in a flow and help you maintain it.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- our_courses_end -->
+
+  
+
+    <!-- our_latest_blog_start -->
+    <div class="our_latest_blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-100">
+                        <h3>Our Latest Tutorials</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_latest_blog">
+                        <div class="thumb">
+                            <img src="img/latest_blog/1.png" alt="">
+                        </div>
+                        <div class="content_blog">
+                            <div class="date">
+                                <p>7 Jul, 2020 in <a href="#">Programming language</a></p>
+                            </div>
+                            <div class="blog_meta">
+                                <h3><a href="#">Learn C language </a></h3>
+                            </div>
+                            <p class="blog_text">
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ad praesentium quisquam alias modi dolorem? Minus laborum fuga quo deserunt?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_latest_blog">
+                        <div class="thumb">
+                            <img src="img/latest_blog/2.png" alt="">
+                        </div>
+                        <div class="content_blog">
+                            <div class="date">
+                                <p>7 Jul, 2020 in <a href="#">Courses</a></p>
+                            </div>
+                            <div class="blog_meta">
+                                <h3><a href="#">Webdev Masterclass</a></h3>
+                            </div>
+                            <p class="blog_text">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem modi hic ea possimus placeat libero, quae nesciunt iure inventore. Fugit!.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_latest_blog">
+                        <div class="thumb">
+                            <img src="img/latest_blog/3.png" alt="">
+                        </div>
+                        <div class="content_blog">
+                            <div class="date">
+                                <p>7 Jul, 2020 in <a href="#">Courses</a></p>
+                            </div>
+                            <div class="blog_meta">
+                                <h3><a href="#">learn Python language</a></h3>
+                            </div>
+                            <p class="blog_text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eveniet itaque repellendus quod nisi, dolore exercitationem assumenda quo maxime eos?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- our_latest_blog_end -->
+
+
+    <!-- footer -->
+    <footer class="footer footer_bg_1">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-md-6 col-lg-4">
+                        <div class="footer_widget">
+                            <div class="footer_logo">
+                                <a href="#">
+                                    <img src="img/logo.png" alt="" style="width: 300px; height: 40px;">
+                                </a>
+                            </div>
+                            <p>
+                                Firmament morning sixth subdue darkness creeping gathered divide our let god
+                                moving.
+                                Moving in fourth air night bring upon it beast let you dominion likeness open
+                                place day
+                                great.
+                            </p>
+                            <div class="socail_links">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="ti-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="ti-twitter-alt"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-youtube-play"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-2 offset-xl-1 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                               Tutorials
+                            </h3>
+                            <ul>
+                                <li><a href="#">C language</a></li>
+                                <li><a href="#"> Python Language</a></li>
+                                <li><a href="#">Full-stack development</a></li>
+                                <li><a href="#">Machine Learning</a></li>
+                                <li><a href="#">UI/UX</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6 col-lg-2">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Resources
+                            </h3>
+                            <ul>
+                                <li><a href="#">Free Coupons</a></li>
+                                <li><a href="#">Tutorials</a></li>
+                                <li><a href="#">Tech Blogs</a></li>
+                                <li><a href="#">Tutorials</a></li>
+                                <li><a href="#">Entertainment-Blogs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Address
+                            </h3>
+                            <p>
+                                UEM Kolkata, Narkelbagan, Newtown <br>
+                                +91 9830456771 <br>
+                                cleverworld@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_widget">
+            <div class="container">
+                <div class="footer_border"></div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="text-center">
+                            <h5> <a href="#">&copy; The Clever World </a></h5>
+                            <p>This page is made with <i class="fas fa-heart" style="color: red;"> </i> by Soumava Banerjee</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+
+    
+    
+    <!-- JS here -->
+     
+    <script src="js/vendor/jquery-1.12.4.min.js"></script> 
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <!-- <script src="js/jquery.scrollUp.min.js"></script> -->
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/plugins.js"></script>
+     <script src="js/gijgo.min.js"></script> 
+    <script src="js/navbar.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <!--contact js-->
+    <!-- <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script> -->
+
 </body>
-
 </html>

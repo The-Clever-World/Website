@@ -1,4 +1,4 @@
 #The Clever World
 
 ->All the direct commit are made in this folder 
-->this folder will be hosted soo be careful!
+->this folder will be hosted soo be careful!.
